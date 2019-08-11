@@ -1,1 +1,52 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title>Reaptor AB</title>
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <style>
+    body {
+        background-color: #F0F0F0;
+    }
+    </style>
+</head>
+<body>
+    <pre><code class="fsharp">
+        type Employee = {
+            name: string
+            address: string
+            phoneNumber: string
+        }
+        type Company = {
+            name: string
+            specialties: string list
+            consultants: Employee list
+            contact: string
+        }
+        let reaptor = {
+            name = "Reaptor AB"
+            specialties = [
+                "Functional programming"
+                "F#"
+                "Web development"
+            ]
+            consultants = [{
+                name = "Kristoffer Löfberg"
+                address = "Aspvägen 50, 141 41 Huddinge"
+                phoneNumber = "0733-359 266"
+            }]
+            contact: "hello@reaptor.com"
+        }
+    </code></pre>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script
+        charset="UTF-8"
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/fsharp.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
